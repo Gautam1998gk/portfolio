@@ -82,7 +82,7 @@ const Hero = () => {
             <section id="hero">
             <div className="grid md:grid-cols-2 grid-cols-1 my-10 gap-10 w-full hero">
                 <div className='w-full flex flex-col items-center gap-10 justify-center'>
-                    <h3 className='title font-bold text-indigo-500 dark:text-white text-5xl'>Hello! , I'm Gowtham</h3>
+                    <h3 className='title font-bold text-indigo-500 dark:text-white text-5xl'>Hello! , I&apos;m Gowtham</h3>
                     <p className='text-xl role'>Full Stack Developer</p>
                     <ul className="flex gap-4 socials">
                         {socials.map(so => <li key={so.id}>

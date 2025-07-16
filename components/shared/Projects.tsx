@@ -1,7 +1,6 @@
 "use client"
 import { useGSAP } from "@gsap/react"
 import ChromaGrid from "../ChromaGrid/ChromaGrid"
-import { geistSans } from "@/app/layout"
 import gsap from "gsap"
 import { ScrollTrigger, SplitText } from "gsap/all"
 
@@ -24,7 +23,7 @@ const Projects = () => {
   },[])
   return (
     <section id="projects">
-    <div className={`w-full my-10 ${geistSans.variable}`}>
+    <div className={`w-full my-10`}>
         <h1 className="text-center my-10 text-4xl font-semibold  py-6">PROJECTS</h1>
         <ChromaGrid />
         {/* personal project implement the https://animata.design/docs/carousel/expandable */}

@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface FlipCardProps extends React.HTMLAttributes<HTMLDivElement> {
     image: string;
     title: string;
     description: string[];
-    subtitle?: string;
     rotate?: "x" | "y";
 }
 
@@ -12,7 +12,6 @@ export default function FlipCard({
     image,
     title,
     description,
-    subtitle,
     rotate = "y",
     className,
     ...props
@@ -33,9 +32,9 @@ export default function FlipCard({
             >
                 {/* Front */}
                 <div className="absolute z-10 flex-1 h-full w-full box-border [backface-visibility:hidden]">
-                    <img
+                    <Image
                         src={image}
-                        alt={title}
+                        alt={title} width={400} height={400}
                         loading="lazy"
                         className="w-full h-full object-cover rounded-[10px]"
                     />
@@ -62,7 +61,7 @@ export default function FlipCard({
               {description}{" "}
             </p> */}
                         <ul className=" py-4 text-sm font-medium  text-gray-100 list-disc list-inside space-y-1">
-                            {description.map((point: any, i: number) => (
+                            {description.map((point: string, i: number) => (
                                 <li key={i}>{point}</li>
                             ))}
                         </ul>
