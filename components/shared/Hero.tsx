@@ -12,6 +12,7 @@ import { Button } from '../ui/button'
 import UseAnimations from "react-useanimations";
 import download from 'react-useanimations/lib/download';
 import { CoolMode } from '../magicui/cool-mode'
+import { toast } from 'sonner'
 
 const socials = [{
     id: 1,
@@ -91,7 +92,16 @@ const Hero = () => {
             stagger: 0.05
         });
     }, []);
-
+    const handleContact = () => {
+        const mobileNumber = "+91 6281689526";
+        navigator.clipboard.writeText(mobileNumber)
+            .then(() => {
+               toast.success(`Mobile No copied i.e ${mobileNumber}`)
+            })
+            .catch((err) => {
+                console.error("Failed to copy number: ", err);
+            });
+    };
 
     return (
         <section id="hero">
@@ -103,8 +113,8 @@ const Hero = () => {
                         {socials.map(so => <li key={so.id}>
                             <Link target='_blank' href={so.url}>{so.icon}</Link></li>)}
                         <li><CoolMode>
-                            <Button className=' bg-gradient-to-r from-blue-500 to-pink-500 flex gap-2 '  onClick={handleClick}>Resume  <span className='animate-bounce'><UseAnimations className='cursor-pointer' animation={download} size={25} strokeColor='blue' /></span></Button>
-                       </CoolMode> </li>
+                            <Button className=' bg-gradient-to-r from-blue-500 to-pink-500 flex gap-2 ' onClick={handleClick}>Resume  <span className='animate-bounce'><UseAnimations className='cursor-pointer' animation={download} size={25} strokeColor='blue' /></span></Button>
+                        </CoolMode> </li>
                     </ul>
                 </div>
                 <div className='w-full flex justify-center'>
@@ -117,7 +127,7 @@ const Hero = () => {
                         avatarUrl="/photo.png"
                         showUserInfo={true}
                         enableTilt={true}
-                        onContactClick={() => console.log('Contact clicked')}
+                        onContactClick={handleContact}
                     />
                 </div>
             </div>

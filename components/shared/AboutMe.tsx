@@ -220,7 +220,7 @@ export default function AboutMeSection() {
 
         <div className="lg:col-span-3 relative">
           {/* vertical timeline line */}
-          <div className="absolute left-4 top-0 bottom-0 w-px bg-border origin-top" ref={timelineLine} />
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-border origin-top" ref={timelineLine} />
 
           <ol className="relative ml-10 space-y-16">
             {experience.map((job, i) => (
