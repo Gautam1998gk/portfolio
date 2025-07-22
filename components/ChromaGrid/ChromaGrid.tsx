@@ -205,7 +205,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#chromaGrid",
-        start: "start 60%",
+        start: "start 70%",
       }
     })
     tl.from(".cards", {
@@ -216,6 +216,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       stagger: 0.1
     })
   }, [])
+
   return (
     <div
       ref={rootRef}

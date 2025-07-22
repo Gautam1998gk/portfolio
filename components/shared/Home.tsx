@@ -3,7 +3,8 @@ import Hero from './Hero'
 import Projects from './Projects'
 import gsap from "gsap"
 import { ScrollTrigger, SplitText } from "gsap/all"
-import ImageReveal from './Experience'
+import Skills from './skills'
+import AboutMe from './AboutMe'
 
 gsap.registerPlugin(SplitText, ScrollTrigger)
 const HomeSections = () => {
@@ -11,11 +12,12 @@ const HomeSections = () => {
         <div className='w-full'>
             <Hero />
             <Projects />
-            <ImageReveal/>
+            <Skills/>
+            <AboutMe/>
             {/* 
             companies,
             contact, 
-            self projects,
+            self projects,about me
             download resume
             */}
         </div>
