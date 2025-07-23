@@ -37,7 +37,7 @@ export const resumeData: ResumeData = {
     "Next.js",
     "Node.js",
     "Express.js",
-    "MS SQL",
+    "MY SQL",
   ],
   education: "B.Tech Mechanical Engineering, N.B.K.R Institute of Science & Technology (2020)",
   experience: [
