@@ -73,7 +73,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
     },
     {
       image: "/projects/rpa-logistics.png", // See image suggestions below
-      title: "RPA-Driven Logistics Submission Engine",
+      title: "RPA-Driven Logistics",
       subtitle: "Full Stack Automation Engineer", // Alternative: "React, Node.js, & Playwright"
       handle: "@jordanchen", // Update this if necessary
       borderColor: "#3B82F6", // Updated to a tech-blue color theme
