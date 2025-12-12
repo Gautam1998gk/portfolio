@@ -72,18 +72,18 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       ]
     },
     {
-      image: "/projects/printing.jpg",
-      title: "Custom Printing",
-      subtitle: "DevOps Engineer",
-      handle: "@jordanchen",
-      borderColor: "#10B981",
-      gradient: "linear-gradient(210deg,#10B981,#000)",
+      image: "/projects/rpa-logistics.png", // See image suggestions below
+      title: "RPA-Driven Logistics Submission Engine",
+      subtitle: "Full Stack Automation Engineer", // Alternative: "React, Node.js, & Playwright"
+      handle: "@jordanchen", // Update this if necessary
+      borderColor: "#3B82F6", // Updated to a tech-blue color theme
+      gradient: "linear-gradient(210deg,#3B82F6,#000)", // Blue to black gradient
       url: "https://linkedin.com/in/",
       description: [
-        "Client-side product customization using Fabric.js and Three.js",
-        "Admins can create templates and manage orders in real-time",
-        "React UI for designing mugs, t-shirts, and printable items",
-        "Built with Node.js API backend and role-based access control"
+        "End-to-end RPA bot using Playwright for autonomous FDA portal submissions",
+        "React frontend for instant Airway Bill (AWB) data retrieval via Node.js APIs",
+        "Engineered robust handling for MFA, CAPTCHA, and dynamic form validation",
+        "Achieved a 90% reduction in manual processing time (30 mins to 3 mins)"
       ]
     },
     {
@@ -212,7 +212,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       opacity: 0,
       duration: 1,
       ease: "power1.inOut",
-      yPercent:50,
+      yPercent: 50,
       stagger: 0.1
     })
   }, [])
