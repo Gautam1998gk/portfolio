@@ -44,18 +44,18 @@ export const resumeData: ResumeData = {
     {
       role: "Full Stack Developer",
       company: "Onex9 Software",
-      start: "Feb 2024",
+      start: "Jul 2023",
       end: "Present",
       bullets: [
-        "Developing e‑commerce & ERP software using React, Redux, RTK Query and shadcn ui.",
+        "Developing e‑commerce,RPA,Innovation & ERP software using React, Redux, RTK Query and shadcn ui.",
         "Building an API with Node.js, Express.js and SQL"
       ],
     },
     {
       role: "Full stack Development(Certification)",
       company: "E&ICT IIT Guwahati & Intellipaat",
-      start: "Mar 2023",
-      end: "Jan 2024",
+      start: "Jan 2023",
+      end: "Sep 2023",
       bullets: [
         "Advanced Certification in Full Stack Web Development",
       ],

@@ -48,7 +48,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       handle: "@alexrivera",
       borderColor: "#4F46E5",
       gradient: "linear-gradient(145deg,#4F46E5,#000)",
-      url: "https://chennapatnampattucheeralaangadi.com/",
+      url: "https://online.maguvasignature.com/",
       description: [
         "Built customer-facing e-commerce platform for seamless shopping",
         "Implemented admin dashboard to manage products, orders, and categories",
@@ -78,7 +78,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       handle: "@jordanchen", // Update this if necessary
       borderColor: "#3B82F6", // Updated to a tech-blue color theme
       gradient: "linear-gradient(210deg,#3B82F6,#000)", // Blue to black gradient
-      url: "https://linkedin.com/in/",
+      url: "https://smartpnc.iclexpress.in/",
       description: [
         "End-to-end RPA bot using Playwright for autonomous FDA portal submissions",
         "React frontend for instant Airway Bill (AWB) data retrieval via Node.js APIs",
@@ -108,7 +108,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       handle: "@thesamkim",
       borderColor: "#8B5CF6",
       gradient: "linear-gradient(225deg,#8B5CF6,#000)",
-      url: "https://onex9.maguvasignature.com/",
+      url: "https://onexnine.com/",
       description: [
         "Static site presenting a SaaS ERP product demo",
         "Clean and modern UI to showcase ERP capabilities",
